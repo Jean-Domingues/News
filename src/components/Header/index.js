@@ -15,7 +15,7 @@ export default function Head() {
 
   return (
     <Header>
-      <Logo to="/">PintoNews</Logo>
+      <Logo to="/">News</Logo>
 
       <NavBar>
         <ul>
