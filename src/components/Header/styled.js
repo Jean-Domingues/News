@@ -43,6 +43,10 @@ export const Pesquisa = styled.input`
   border: none;
   padding: 2px 6px;
   font-size: 18px;
+
+  &:focus {
+    border: 1px solid white;
+  }
 `;
 
 export const A = styled.a`

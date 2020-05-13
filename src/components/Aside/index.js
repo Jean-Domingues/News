@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { AsideContainer, Title, Card, Themes, SelectThemes } from './styled';
+import { AsideContainer, Title, Card, SelectThemes } from './styled';
 
 import axios from '../../services/axios';
 import key from '../../services/config';
@@ -31,18 +31,15 @@ export default function Aside() {
 
   return (
     <AsideContainer>
-      <Themes>
-        <SelectThemes onChange={handleChangeTheme} id="themes">
-          <option value="cinema">Cinema</option>
-          <option value="celebridades">Celebridades</option>
-          <option value="musica">Música</option>
-          <option value="esporte">Esportes</option>
-          <option value="filme">Filmes</option>
-          <option value="game">Games</option>
-          <option value="politica">Política</option>
-        </SelectThemes>
-      </Themes>
-
+      <SelectThemes onChange={handleChangeTheme} id="themes">
+        <option value="cinema">Cinema</option>
+        <option value="celebridades">Celebridades</option>
+        <option value="musica">Música</option>
+        <option value="esporte">Esportes</option>
+        <option value="filme">Filmes</option>
+        <option value="game">Games</option>
+        <option value="politica">Política</option>
+      </SelectThemes>
       {notices.map((item) => {
         return (
           <Card onClick={() => handleClickNotice(item)} key={item.url}>

@@ -36,7 +36,7 @@ export const Card = styled.div`
 
   @media (max-width: 1220px) {
     display: block;
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
     & .text,
     & div {
@@ -52,16 +52,14 @@ export const Title = styled.h2`
   font-size: 18px;
 `;
 
-export const Themes = styled.article`
-  padding-bottom: 10px;
-  border-bottom: 1px dotted gray;
-`;
-
 export const SelectThemes = styled.select`
   padding: 10px;
-  color: #5f1007;
+  color: white;
+  background: #661209;
   width: 100%;
   font-size: 20px;
-  text-decoration: underline;
-  font-weight: bold;
+
+  & option:checked {
+    background: #b42010;
+  }
 `;
