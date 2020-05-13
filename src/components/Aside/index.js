@@ -22,7 +22,7 @@ export default function Aside() {
   useEffect(() => {
     async function getData() {
       const response = await axios.get(
-        `/everything?q=${theme}&language=pt&pageSize=8&apiKey=${key}`
+        `/everything?q=${theme}&language=pt&pageSize=10&apiKey=${key}`
       );
       setNotices(response.data.articles);
     }
@@ -47,7 +47,7 @@ export default function Aside() {
         return (
           <Card onClick={() => handleClickNotice(item)} key={item.url}>
             <div>
-              <img src={item.urlToImage} alt="imagem da noticia" width="200" />
+              <img src={item.urlToImage} alt="imagem da noticia" />
             </div>
             <div className="text">
               <Title>{item.title}</Title>

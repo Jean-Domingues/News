@@ -18,7 +18,7 @@ export default function Session({ theme }) {
   useEffect(() => {
     async function getData() {
       const response = await axios.get(
-        `/everything?q=${theme}&language=pt&pageSize=4&apiKey=${key}`
+        `/everything?q=${theme}&language=pt&pageSize=6&apiKey=${key}`
       );
       setNoticias(response.data.articles);
     }

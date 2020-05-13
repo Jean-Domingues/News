@@ -13,8 +13,6 @@ body{
   background: #ccc;
   font-family: 'Roboto', sans-serif;
 }
-
-
 `;
 
 export const Container = styled.main`

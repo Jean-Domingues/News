@@ -54,6 +54,8 @@ export const A = styled.a`
 
 export const Logo = styled(Link)`
   color: white;
+  display: flex;
+  align-items: flex-end;
   margin-left: 5%;
   font-size: 32px;
   text-decoration: none;

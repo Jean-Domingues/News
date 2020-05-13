@@ -22,11 +22,16 @@ export const Card = styled.div`
   }
 
   & .text {
-    width: 70%;
+    width: 60%;
+    height: 100%;
   }
 
-  & img {
-    height: 130px;
+  & div {
+    width: 40%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   @media (max-width: 1220px) {
@@ -34,7 +39,7 @@ export const Card = styled.div`
     width: 80%;
     margin: 20px auto;
     & .text,
-    & img {
+    & div {
       width: 100%;
       text-align: center;
     }
@@ -54,7 +59,9 @@ export const Themes = styled.article`
 
 export const SelectThemes = styled.select`
   padding: 10px;
+  color: #5f1007;
   width: 100%;
   font-size: 20px;
+  text-decoration: underline;
   font-weight: bold;
 `;

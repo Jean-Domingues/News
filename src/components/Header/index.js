@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FaSearch } from 'react-icons/fa';
+import { FaSearch, FaNewspaper } from 'react-icons/fa';
 import history from '../../services/History';
 
 import { Header, Logo, A, Pesquisa, NavBar } from './styled';
@@ -15,7 +15,10 @@ export default function Head() {
 
   return (
     <Header>
-      <Logo to="/">News</Logo>
+      <Logo to="/">
+        <p>News</p>
+        <FaNewspaper />
+      </Logo>
 
       <NavBar>
         <ul>
