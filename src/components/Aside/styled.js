@@ -23,15 +23,13 @@ export const Card = styled.div`
 
   & .text {
     width: 60%;
-    height: 100%;
   }
 
-  & div {
+  & img {
     width: 40%;
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    max-height: 120px;
+    object-fit: cover;
+    object-position: center;
   }
 
   @media (max-width: 1220px) {
@@ -39,8 +37,9 @@ export const Card = styled.div`
     width: 100%;
     margin: 20px auto;
     & .text,
-    & div {
+    & img {
       width: 100%;
+      max-height: 150px;
       text-align: center;
     }
   }

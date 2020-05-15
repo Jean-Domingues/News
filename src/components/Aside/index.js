@@ -43,9 +43,8 @@ export default function Aside() {
       {notices.map((item) => {
         return (
           <Card onClick={() => handleClickNotice(item)} key={item.url}>
-            <div>
-              <img src={item.urlToImage} alt="imagem da noticia" />
-            </div>
+            <img src={item.urlToImage} alt="imagem da noticia" />
+
             <div className="text">
               <Title>{item.title}</Title>
             </div>
